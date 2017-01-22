@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+<title> {% block title %} Flask Survey {% endblock %} </title>
+
+{% block style %} <link rel="stylesheet" href="static/css/styles.css"> {% endblock %} 
+    
+{% block content %}
+
+
+<div id="content">
+<h1>Welcome to our Assessment Survey</h1>
+
+<section class="box">Please complete this form to let me know if I use correctly the HTML form.  This is my HTML assessment, so, all the information will be confidential. And, there is the possibility that you can find your dream job with this form. It's in the internet, so everything is possible.
+</section>
+
+<form action="/application-success" method="POST">
+
+  <label for="firstname">First Name:</label>
+  <input type="text" id="firstname" name="firstname"><br></br>
+  <label for="lastname">Last Name:</label>
+  <input type="text" id="lastname" name="lastname"><br></br>
+  <label for="salary">Type your desired salary:</label>
+  <input type="number" id="salary" name="quantity" min="0"><br></br> <!-- This will prevent that the user type a negative salary -->
+
+  <label for="job">Select your dream Job:</label>
+    <select id="jobs" name="select">
+
+    {% for key,value in jobs.items() %}
+        <option value="{{ key }}">{{ value }}</option>
+    {% endfor %}
+    </select>
+    
+    <br><br>
+    <input type="submit" name="submit" value="Submit">
+
+</form>
+</div>
+
+{% endblock %}
+
+{% block footer %} 
+   <footer>
+        <p>Survey and Flask by Cristina Rodriguez 2017 . All rights reserved.</p>
+    </footer>
+
+{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+<title>  {% block title %} Flask Response  {% endblock %} </title>
+
+{% block style %} <link rel="stylesheet" href="static/css/styles.css"> {% endblock %} 
+    
+{% block content %}
+<body>
+
+<div id="content">
+<h1> Regards {{ firstname }} {{lastname }}</h1>
+
+<section class="box">Thank you, {{ firstname }} {{lastname }}, for applying to  be a {{ job }}. Your minimum salary requirement is {{ "${:,.2f}".format(salary) }}. We will contact you soon. 
+</section>
+
+</div>
+{% endblock %}
+
+{% block footer %} 
+   <footer>
+        <p>Survey and Flask by Cristina Rodriguez 2017 . All rights reserved.
+        <br><small>Please don't call us. We will call you</small></br></p>
+    </footer>
+
+{% endblock %}
+
+</body>
+</html>

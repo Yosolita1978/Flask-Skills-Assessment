@@ -1,0 +1,4 @@
+env/
+*.pyc
+secretinfo.py
+.DS_Store

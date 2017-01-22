@@ -1,0 +1,25 @@
+body {
+    background: #333 url("../img/back_img.jpg");
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;  
+}

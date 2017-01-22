@@ -1,0 +1,58 @@
+/* Your styles can go here. */
+
+
+#content{
+    width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+    
+
+}
+
+.box{
+    border: 1px solid black;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+input{
+    background-color: #d5d5d5;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 3px;
+}
+
+input[type=submit]{
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+}
+
+select {
+    background-color: #d5d5d5;
+    color: black;
+    border: 2px solid blue;
+}
+
+option:not(:checked){
+    background-color: #d5d5d5;
+    color: black;
+    border: 2px solid blue;
+}
+
+h1{
+    color: #01385e;
+    text-align: center;
+}
+
+label[for=lastname]{
+    font-weight: bold;
+}
+
+footer {
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%; 
+    text-align: center; 
+}

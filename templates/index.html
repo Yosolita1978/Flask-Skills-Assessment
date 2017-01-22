@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+<title>  {% block title %} Flask Home {% endblock %} </title> 
+
+{% block style %} <link rel="stylesheet" href="static/css/style_index.css"> {% endblock %} 
+    
+{% block nav_bar %}{% endblock %}
+
+
+
+{% block content %}
+
+<body>
+
+<div class="content-wrapper">
+    <div class="content-wrapper-inner">
+
+        <h1>Flask Assessment</h1>
+
+        <p class="lead">We ask because We care</p>
+
+        <a href="/application-form" class="btn btn-lg btn-primary">Survey</a>
+
+    </div>
+
+</div>
+
+{% block footer %} 
+   <footer>
+        <p>Cristina Rodriguez 2017 . All rights reserved.</p>
+    </footer>
+
+{% endblock %}
+
+
+
+</body>
+
+{% endblock %}
+</html>
